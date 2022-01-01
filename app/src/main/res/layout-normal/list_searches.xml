@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/example_card_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/ok"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/txtDateOfBirth"
+            app:layout_constraintEnd_toEndOf="@+id/txtDateOfSearch2"
+            app:layout_constraintStart_toEndOf="@+id/txtDateOfSearch2"
+            app:layout_constraintTop_toBottomOf="@+id/txtDateOfBirth">
+
+            <TextView
+                android:id="@+id/txtNameSurname2"
+                android:layout_width="0dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="2dp"
+                android:text="Çağrı Aldemir"
+                android:textColor="#ed9121"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toStartOf="@+id/txtBlood2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtBlood2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2dp"
+                android:text="Arh+"
+                android:textColor="#ed9121"
+                android:textSize="36sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txtNameSurname2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtDateOfSearch2"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="2dp"
+                android:layout_weight="1"
+                android:text="31.08.1995"
+                android:textColor="#add8e6"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/txtCity2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtHospital2" />
+
+            <TextView
+                android:id="@+id/txtHospital2"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="2dp"
+                android:layout_weight="1"
+                android:text="Doğum Tarihi:"
+                android:textColor="#add8e6"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/txtType2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtContactNumber2" />
+
+            <TextView
+                android:id="@+id/txtCity2"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="2dp"
+                android:gravity="end"
+                android:text="TextView"
+                android:textColor="#add8e6"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txtDateOfSearch2"
+                app:layout_constraintTop_toBottomOf="@+id/txtType2" />
+
+            <TextView
+                android:id="@+id/txtType2"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="2dp"
+                android:gravity="end"
+                android:text="TextView"
+                android:textColor="#add8e6"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txtDateOfSearch2"
+                app:layout_constraintTop_toBottomOf="@+id/deleteButton" />
+
+            <TextView
+                android:id="@+id/txtContactNumber2"
+                android:layout_width="175dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="2dp"
+                android:text="05999999999"
+                android:textColor="#add8e6"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtNameSurname2" />
+
+            <Button
+                android:id="@+id/deleteButton"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:text="Sil"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/txtBlood2"
+                app:layout_constraintStart_toEndOf="@+id/txtContactNumber2"
+                app:layout_constraintTop_toBottomOf="@+id/txtNameSurname2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

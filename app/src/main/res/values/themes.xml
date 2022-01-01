@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Kandeneme" parent="Theme.MaterialComponents.DayNight.DarkActionBar" tools:ignore="DuplicateDefinition">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/ok</item>
+        <item name="colorPrimaryVariant">@color/ok</item>
+        <item name="colorOnPrimary">@color/tamam</item>
+        <item name="android:colorPrimaryDark">@color/tamam</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="textInputStyle">@style/Widget.TextInputLayout.FilledBox</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Widget.TextInputLayout.FilledBox" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="hintTextColor">@color/tamam</item>
+        <item name="android:textColorHint">@color/tamam</item>
+    </style>
+    <style name="TextLabel" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="ShowAlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/tamam</item>
+        <item name="android:background">@color/ok</item>
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+</resources>

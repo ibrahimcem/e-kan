@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/tamam"
+    android:layout_height="match_parent"
+    tools:context=".UserInterface">
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomAppBar"
+        android:orientation="vertical">
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fabCradleMargin="10dp"
+        app:backgroundTint="@color/ok"
+        app:fabCradleVerticalOffset="10dp"
+        app:fabCradleRoundedCornerRadius="20dp"
+        android:layout_gravity="bottom">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:itemIconTint="@drawable/tab_color"
+            app:itemIconSize="30dp"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            app:menu="@menu/navigation_menu" />
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/ok"
+        android:scaleType="center"
+        app:rippleColor="@color/tamam"
+        app:tint="@color/white"
+        app:maxImageSize="45dp"
+        android:onClick="fabOnclicked"
+        android:src="@drawable/logo72"
+        app:layout_anchor="@id/bottomAppBar"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription,HardcodedText,OnClick" />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

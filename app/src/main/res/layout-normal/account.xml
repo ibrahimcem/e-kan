@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/tamam">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/tamam"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:background="@color/tamam">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hesap Bilgilerim"
+                    android:enabled="false"
+                    android:background="@color/ok"
+                    android:textSize="20sp"
+                    android:textColor="@color/tamam"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tamam"
+                android:hint="İsim-Soyisim">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ok"
+                    android:id="@+id/myAccountName"
+                    android:textColor="@color/white"
+                    android:enabled="false"
+                    android:text="İbrahim Cem Ulaş">
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tamam"
+                android:hint="Kan Grubu">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ok"
+                    android:id="@+id/myAccountBlood"
+                    android:textColor="@color/white"
+                    android:enabled="false"
+                    android:clickable="true"
+                    android:text="Arh+" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tamam"
+                android:hint="E-posta">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/myAccountEmail"
+                    android:background="@color/ok"
+                    android:onClick="updateEmailClicked"
+                    android:textColor="@color/white"
+                    android:drawableEnd="@drawable/edit"
+                    android:drawableTint="#add8e6"
+                    android:text="ibrahimcemulas@gmail.com" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tamam"
+                android:hint="Telefon Numarası">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/myAccountNumber"
+                    android:background="@color/ok"
+                    android:drawableEnd="@drawable/edit"
+                    android:drawableTint="#add8e6"
+                    android:textColor="@color/white"
+                    android:text="05342886342" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tamam"
+                android:textColor="@color/tamam"
+                android:hint="Yaşadığın Şehir">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ok"
+                    android:drawableEnd="@drawable/edit"
+                    android:id="@+id/myAccountCity"
+                    android:drawableTint="#add8e6"
+                    android:textColor="@color/white"
+                    android:text="İstanbul" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ok"
+                android:id="@+id/updatePassword"
+                android:text="Şifreyi Değiştir"
+                android:textColor="@color/white"
+                android:clickable="true"
+                android:focusable="true">
+            </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:background="@color/tamam">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Şikayet-İstek Ve Öneri"
+                    android:enabled="false"
+                    android:background="@color/ok"
+                    android:textSize="20sp"
+                    android:textColor="@color/tamam"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tamam"
+                android:textColor="@color/tamam"
+                app:hintTextAppearance="@style/TextLabel"
+                android:hint="İletişim">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ok"
+                    android:textColor="@color/white"
+                    android:textIsSelectable="true"
+                    android:editable="false"
+                    android:text="destek@e-kan.tech" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:background="@color/tamam">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sık Sorulan Sorular"
+                    android:enabled="false"
+                    android:background="@color/ok"
+                    android:textSize="20sp"
+                    android:textColor="@color/tamam"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tamam"
+                android:textColor="@color/tamam"
+                app:hintTextAppearance="@style/TextLabel"
+                android:hint="Kimler Kan Verebilir?">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ok"
+                    android:textIsSelectable="true"
+                    android:editable="false"
+                    android:textColor="@color/white"
+                    android:text="18-65 yaş aralığında 50 kilogramın üzerindeki her sağlıklı birey kan bağışçısı adayı olabilir. " />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tamam"
+                android:textColor="@color/tamam"
+                app:hintTextAppearance="@style/TextLabel"
+                android:hint="Hangi aralıklarla kan bağışında bulunabilirim?">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ok"
+                    android:textIsSelectable="true"
+                    android:editable="false"
+                    android:textColor="@color/white"
+                    android:text="Tam kan bağışında; Erkekler 90 günde bir, Kadınlar 120 gün de bir."/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tamam"
+                android:textColor="@color/tamam"
+                app:hintTextAppearance="@style/TextLabel"
+                android:hint="Kök Hücre Nedir?">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ok"
+                    android:textColor="@color/white"
+                    android:textIsSelectable="true"
+                    android:editable="false"
+                    android:text="Yaşam boyu kendi kendini yenileme ve farklı, tamamen olgun hücrelere dönüşebilme kapasitesine sahip hücrelerdir. İhtiyaç olduğu zaman kendilerinden sonraki hücrelere farklılaşarak, hücrelerin gelişimini, olgunlaşmasını ve çoğalmasını sağlarlar."/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tamam"
+                android:textColor="@color/tamam"
+                app:hintTextAppearance="@style/TextLabel"
+                android:hint="Kök Hücre Tedavisi Uygulanan Hastalıklar">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ok"
+                    android:textIsSelectable="true"
+                    android:editable="false"
+                    android:textColor="@color/white"
+                    android:text="Kemik iliği kanserleri , Lenfomalar, Çeşitli organ kanserleri, Kemik iliğinin yetersiz çalıştığı veya çalışmadığı durumlar, İmmün yetersizlikler, Kalıtsal metabolik hastalıklar"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tamam"
+                android:textColor="@color/tamam"
+                app:hintTextAppearance="@style/TextLabel"
+                android:hint="Kök Hücre Bağışı ve Doku Uyumu">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ok"
+                    android:textColor="@color/white"
+                    android:textIsSelectable="true"
+                    android:editable="false"
+                    android:text="Erişkin kök hücrelerden olan hematopoetik kök hücreler;Tüm kan hücrelerine farklılaşabilirler, Kemik iliği, kan ve göbek kordonundan elde edilirler, Uygun koşullarda dondurularak canlılığını korurlar.Damar yolu ile verildiğinde kemik iliğine yerleşir ve hematopoezi (kan hücrelerinin oluşumu) başlatırlar.
+HLA, bir kişinin dokusunun diğer bir kişiye ne kadar uyduğunu gösterir. HLA doku tipi kalıtsal olup, kişinin kardeşleri varsa ikizi en iyi eşleşme ihtimali olan kişilerdir. Hastanın ailesi içerisinde eşleşme bulunamaz ise tarama sizin gibi akraba olmayan kişiler arasında yapılmaya başlanır. Bir bağışçının, bir hasta için uygun olduğunun belirlenmesi, HLA doku tiplerinin eşleşmesi ile olur. Bağışçı ve hastanın HLA sonuçlarının yüksek oranda eşleşmesi, en iyi nakil sonucunun alınmasına neden olur.
+"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tamam"
+                android:textColor="@color/tamam"
+                app:hintTextColor="@color/tamam"
+                app:hintTextAppearance="@style/TextLabel"
+                android:hint="Kök Hücre Bağışçısı Olmak İçin Gereken Şartlar">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ok"
+                    android:textColor="@color/white"
+                    android:textIsSelectable="true"
+                    android:editable="false"
+                    android:text="18-50 yaş aralığında olmalıdır, sağlıklı bir kişi olmalıdır. (Hepatit B, Hepatit C ve Sifiliz hastalığı geçirmemiş olan, kronik hastalığı bulunmayan, kanser, HIV ( AIDS ) tanısı almamış olan kişiler)
+"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

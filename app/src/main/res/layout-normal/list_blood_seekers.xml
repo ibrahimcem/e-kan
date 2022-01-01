@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:tag="cards main container">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/example_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/ok"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/txtDateOfBirth"
+            app:layout_constraintTop_toBottomOf="@+id/txtDateOfBirth">
+
+            <TextView
+                android:id="@+id/txtNameSurname"
+                android:layout_width="0dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="2dp"
+                android:text="İbrahim Cem Ulaş"
+                android:textColor="#ed9121"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toStartOf="@+id/txtBlood"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/txtBlood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2dp"
+                android:text="Arh+"
+                android:textColor="#ed9121"
+                android:textSize="36sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/callButton"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtDateOfSearch"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="2dp"
+                android:layout_weight="1"
+                android:text="31.08.1995"
+                android:textColor="#add8e6"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/txtCity"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtHospital" />
+
+            <TextView
+                android:id="@+id/txtHospital"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="2dp"
+                android:layout_weight="1"
+                android:text="Doğum Tarihi:"
+                android:textColor="#add8e6"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/txtType"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/callButton" />
+
+            <TextView
+                android:id="@+id/txtCity"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="2dp"
+                android:gravity="end"
+                android:text="TextView"
+                android:textColor="#add8e6"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txtDateOfSearch"
+                app:layout_constraintTop_toBottomOf="@+id/txtType" />
+
+            <TextView
+                android:id="@+id/txtType"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="2dp"
+                android:gravity="end"
+                android:text="TextView"
+                android:textColor="#add8e6"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txtHospital"
+                app:layout_constraintTop_toBottomOf="@+id/callButton" />
+
+            <TextView
+                android:id="@+id/txtContactNumber"
+                android:layout_width="175dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="2dp"
+                android:text="05999999999"
+                android:textColor="#add8e6"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toStartOf="@+id/callButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtNameSurname" />
+
+            <Button
+                android:id="@+id/callButton"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="4dp"
+                android:background="@null"
+                android:backgroundTint="@null"
+                android:drawableLeft="@drawable/call"
+                android:gravity="start"
+                android:text="Ara"
+                android:textColor="#add8e6"
+                app:itemIconSize="30dp"
+                android:drawableTint="#add8e6"
+                app:layout_constraintEnd_toStartOf="@+id/txtBlood"
+                app:layout_constraintStart_toEndOf="@+id/txtContactNumber"
+                app:layout_constraintTop_toBottomOf="@+id/txtNameSurname"
+                app:maxImageSize="30dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

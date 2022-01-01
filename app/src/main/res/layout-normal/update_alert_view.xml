@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ok">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/updateInput"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:hint="E-posta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/updateEdit"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:background="@color/ok"
+            android:text="ibrahimcemulas@gmail.com"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

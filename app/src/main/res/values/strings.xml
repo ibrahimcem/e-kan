@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">E-Kan</string>
+    <string name="msg_token_fmt" />
+    <string name="dont_have_an_account_register"><font color='#FFFFFFFF'>HESABIN YOK MU?</font><font color='#ffdf00'> KAYDOL</font></string>
+</resources>
